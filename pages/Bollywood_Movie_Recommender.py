@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings("ignore")
 import streamlit as st
 
-data=pd.read_csv(r"pages\IMDB-Movie-Dataset(2023-1951).csv")
+data=pd.read_csv(r"pages/IMDB-Movie-Dataset(2023-1951).csv")
 data.drop(columns={"Unnamed: 0","movie_id","year"},inplace=True)
 data["godc"]=data["genre"]+data["overview"]+data["director"]+data["cast"]
 data.drop(columns={"genre","overview","director","cast"},inplace=True)
