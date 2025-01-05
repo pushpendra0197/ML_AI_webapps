@@ -10,7 +10,7 @@ from sklearn.linear_model import Lasso
 from sklearn.linear_model import ElasticNet
 import joblib
 import streamlit as st
-model=joblib.load(r"pages\Car_Price_Pridction")
+model=joblib.load(r"pages/Car_Price_Pridction")
 st.title("Welcome To The Car Selling Price")
 st.text("Enter car purchasing price>>1 lakh== 1.0")
 PricePresent=st.text_input("Purchasing price")
