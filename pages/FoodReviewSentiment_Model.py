@@ -18,7 +18,7 @@ import base64
 
 
 
-fitdata=joblib.load(r'pages\fit_data')
+fitdata=joblib.load(r'pages/fit_data')
 cv=CountVectorizer(max_features=1500)
 x=cv.fit(fitdata)
 
@@ -58,7 +58,7 @@ if button:
     
        return review
     input_vec=cv.transform([input])
-    model=joblib.load(r"pages\review_prediction_model")
+    model=joblib.load(r"pages/review_prediction_model")
     prediction=model.predict(input_vec)
     if prediction=="Disliked":
        st.subheader("👎Disliked")
