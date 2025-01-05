@@ -10,7 +10,7 @@ from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 import joblib
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
-model=joblib.load(r"pages\loan_approval")
+model=joblib.load(r"pages/loan_approval")
 st.title("Loan Approval Checker")
 age=st.text_input("Age")
 gender=st.radio("Gender",["Male","Female"])
