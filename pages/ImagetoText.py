@@ -15,7 +15,7 @@ button=st.button("Click For Conversion")
 if button:
     if file:
         image=Image.open(file)
-        Model=joblib.load("converter")
+        Model=joblib.load(r"pages/converter")
         answer=Model.readtext(image)
         with st.spinner('Wait for it...'):
          time.sleep(8)
