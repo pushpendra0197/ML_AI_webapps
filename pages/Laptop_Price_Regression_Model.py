@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 import sklearn
-model=joblib.load(r"pages\laptop_price_prediction.pkl")
+model=joblib.load(r"pages/laptop_price_prediction.pkl")
 
 st.title("Welcome to Laptop Price Prediction")
 st.text("Acer,Apple,Asus,Chuwi,Dell,Fujitsu,Google,Huawei,LG,Lenovo,MSI,Mediacom,Microsoft,Razer,Samsung,Toshiba,Vero,Xiaomi")
