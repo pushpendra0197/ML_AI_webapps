@@ -1,0 +1,7 @@
+Run the pre requirement for this app by
+pip install -r requirements.txt
+
+Run app by 
+streamlit run Homepages.py
+
+python -m streamlit run Homepages.py
